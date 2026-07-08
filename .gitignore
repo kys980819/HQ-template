@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.env
+.env.*
+node_modules/
+
+# 옵시디언 휘발 파일 (기기별 상태 — 동기화 대상 아님)
+brain/.obsidian/workspace.json
+brain/.obsidian/workspace-mobile.json
+brain/.obsidian/cache/
+
+# 클로드코드 로컬 설정
+.claude/settings.local.json
+
+# HQ 루트를 실수로 볼트로 열었을 때 생기는 잔여물 (진짜 볼트는 brain/)
+/.obsidian/
