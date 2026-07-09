@@ -1,13 +1,22 @@
-# First Setup Prompt (템플릿 재사용 시 — git tag `template-v1` 시점에서 새로 시작할 때)
+# First Setup Prompt (템플릿을 새로 받아 처음 시작할 때 — git tag `template-v1` 기준)
+
+이 템플릿을 새로 받았다면, 아래 프롬프트를 AI(클로드코드 등)에게 그대로 붙여넣고
+맨 끝 `[내 목적]` 자리에 "이 뇌를 무엇에 쓰고 싶은지"를 한 단락으로 적으세요.
+AI가 그 목적에 맞게 프로필과 폴더 구조를 당신에게 맞게 구성해 줍니다.
 
 ```text
 현재 폴더는 HQ 템플릿(빈 뇌)이야.
 
-1. BRAIN.md 와 어댑터 3종(CLAUDE/GEMINI/AGENTS.md), brain\index.md, brain\log.md 를 읽고 규칙을 파악해줘
+1. BRAIN.md 와 어댑터 3종(CLAUDE/GEMINI/AGENTS.md), brain\프로필.md, brain\index.md, brain\log.md 를 읽고 규칙과 구조를 파악해줘
 2. 카파시 LLM Wiki 원전을 읽고 설계 취지를 확인해줘:
    https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-3. BRAIN.md 1장 프로필을 새 사용자 정보로 채워줘 (사용자 확인 후 확정)
-4. 사용자 상황에 안 맞는 구역(예: 10-취업)이 있으면 개조를 제안해줘
+3. 아래 [내 목적]을 읽고, 그에 맞게 brain\프로필.md 를 새 사용자 정보로 채워줘.
+   파일 안 PROFILE:START ~ PROFILE:END 사이를 채우고, 확정 전에 나에게 확인받아줘.
+4. 내 목적에 안 맞는 생활 구역(예: 취준이 아니면 10-취업)이 있으면, 그 목적에 맞는
+   폴더 구성으로 개조를 제안해줘 (BRAIN.md 2장 구조 설명과 brain\index.md 구역 안내도 함께 고칠 것).
 
 작업이 끝나면 어떤 파일을 왜 수정했는지 설명해줘.
+
+[내 목적]: (여기에 이 뇌를 어디에 쓰려는지 한 단락으로 적기 —
+예: "보안 공부 기록과 이직 준비에 쓰고 싶다" / "글쓰기 소재와 독서 노트를 모으고 싶다")
 ```
